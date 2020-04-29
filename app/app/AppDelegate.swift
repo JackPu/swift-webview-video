@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  testvideoapp
+//  app
 //
-//  Created by puhuan on 2020/4/24.
+//  Created by puhuan on 2020/4/29.
 //  Copyright © 2020 puhuan. All rights reserved.
 //
 
