@@ -1,0 +1,23 @@
+{
+  "name": "swift-webview-video",
+  "version": "1.0.0",
+  "description": "Test iOS webview attributes of video element",
+  "main": "index.js",
+  "scripts": {
+    "servr": "serve ./web",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackPu/swift-webview-video.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackPu/swift-webview-video/issues"
+  },
+  "homepage": "https://github.com/JackPu/swift-webview-video#readme",
+  "devDependencies": {
+    "serve": "^11.3.0"
+  }
+}

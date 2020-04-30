@@ -10,5 +10,15 @@ $ git clone https://github.com/JackPu/swift-webview-video
 # then use xcode open app/app.xcodeproj
 ```
 
+Start web page
+
+``` bash
+$ npm install
+
+# start local server
+
+npm run serve
+```
+
 
 
