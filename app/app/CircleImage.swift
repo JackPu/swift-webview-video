@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CircleImage: View {
     var body: some View {
-        Image("logo-200").frame(width: 100, height: 100)
+        Image("logo200").frame(width: 100, height: 100)
             .padding()
     }
 }
