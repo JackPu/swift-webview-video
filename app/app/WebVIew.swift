@@ -9,6 +9,9 @@
 import SwiftUI
 import WebKit
 
+private var screenSize = UIScreen.main.bounds
+private var screenWidth = screenSize.width
+
 struct WebView: UIViewRepresentable {
     let request: URLRequest
     
@@ -23,6 +26,6 @@ struct WebView: UIViewRepresentable {
 
 struct WebVIew_Previews: PreviewProvider {
     static var previews: some View {
-        WebView(request: URLRequest(url: URL(string: "https://ioscreator.com")!))
+        WebView(request: URLRequest(url: URL(string: "https://ioscreator.com")!)).previewLayout(.fixed(width: screenWidth, height: 320))
     }
 }

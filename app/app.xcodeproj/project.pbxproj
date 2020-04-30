@@ -37,6 +37,7 @@
 		8176CEFA24592E11005A16C9 /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 8176CEF924592E11005A16C9 /* swift.png */; };
 		8176CEFD24595932005A16C9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176CEFC24595931005A16C9 /* MapView.swift */; };
 		8176CF0124596B40005A16C9 /* WebVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176CF0024596B40005A16C9 /* WebVIew.swift */; };
+		81AAAB8F245AB42A0048AA20 /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AAAB8E245AB42A0048AA20 /* WebViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		8176CEF924592E11005A16C9 /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swift.png; path = ../../../../Downloads/swift.png; sourceTree = "<group>"; };
 		8176CEFC24595931005A16C9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8176CF0024596B40005A16C9 /* WebVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVIew.swift; sourceTree = "<group>"; };
+		81AAAB8E245AB42A0048AA20 /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				8176CF0024596B40005A16C9 /* WebVIew.swift */,
 				8148FDC0245A760800146CA0 /* AppItemRowView.swift */,
 				8148FE07245A7F3A00146CA0 /* AppListView.swift */,
+				81AAAB8E245AB42A0048AA20 /* WebViewContainer.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81AAAB8F245AB42A0048AA20 /* WebViewContainer.swift in Sources */,
 				8176CEC124591D7B005A16C9 /* AppDelegate.swift in Sources */,
 				8176CEF824592BB1005A16C9 /* CircleImage.swift in Sources */,
 				8176CEFD24595932005A16C9 /* MapView.swift in Sources */,
