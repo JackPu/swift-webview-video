@@ -21,6 +21,6 @@
         "name": "applicationNameForUserAgent",
         "desc": "设置请求的User-Agent信息中应用程序名称",
         "defaultValue": "not nil",
-        "id": 1004,
+        "id": 1005,
     }
 ]
