@@ -84,11 +84,12 @@
         <p><a href="https://developer.apple.com/documentation/webkit/wkwebviewconfiguration">wkwebviewconfiguration</a></p>
     </div>
     <script>
+        var videoEl = document.querySelector("video");
         function _load () {
             var uaEl = document.querySelector(".js-ua");
             uaEl.innerHTML = navigator.userAgent;
             var sizeEl = document.querySelector(".js-size");
-            var videoEl = document.querySelector("video");
+            
             sizeEl.innerHTML = videoEl.offsetWidth + ' x ' + videoEl.offsetHeight;
             var hostEl = document.querySelector(".js-host");
             hostEl.innerHTML = location.host;
@@ -105,6 +106,14 @@
             btnDebug.style.display = '';
         }
         document.addEventListener('DOMContentLoaded', _load);
+        window.onclose = function () {
+            videoEl.pause();
+        }
+        document.addEventListener("visibilitychange", function() {
+            if (!document.visibilityState) {
+                videoEl.pause();
+            }
+        });
     </script>
 </body>
 
