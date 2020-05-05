@@ -17,6 +17,10 @@ struct WebView: UIViewRepresentable {
     var config = WKWebViewConfiguration()
     func makeUIView(context: Context) -> WKWebView {
         config.applicationNameForUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 core_player_wm/0.1.1"
+        config.allowsInlineMediaPlayback = true
+        config.allowsAirPlayForMediaPlayback = true
+        config.allowsPictureInPictureMediaPlayback = true
+        config.mediaTypesRequiringUserActionForPlayback = .all
         return WKWebView(frame: .zero, configuration: config)
     }
     

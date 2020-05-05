@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81249CC624615F290046E345 /* EmptyWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81249CC524615F290046E345 /* EmptyWebview.swift */; };
 		8148FDC1245A760800146CA0 /* AppItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8148FDC0245A760800146CA0 /* AppItemRowView.swift */; };
 		8148FDE9245A7A9200146CA0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8148FDE8245A7A9200146CA0 /* Data.swift */; };
 		8148FDF8245A7AC200146CA0 /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8148FDEB245A7AC100146CA0 /* silversalmoncreek.jpg */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81249CC524615F290046E345 /* EmptyWebview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyWebview.swift; sourceTree = "<group>"; };
 		8148FDC0245A760800146CA0 /* AppItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItemRowView.swift; sourceTree = "<group>"; };
 		8148FDE4245A79B000146CA0 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8148FDE5245A79B000146CA0 /* appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,7 @@
 				8148FDC0245A760800146CA0 /* AppItemRowView.swift */,
 				8148FE07245A7F3A00146CA0 /* AppListView.swift */,
 				81AAAB8E245AB42A0048AA20 /* WebViewContainer.swift */,
+				81249CC524615F290046E345 /* EmptyWebview.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				8176CEC324591D7B005A16C9 /* SceneDelegate.swift in Sources */,
 				8148FE06245A7AF000146CA0 /* Landmark.swift in Sources */,
 				8148FDC1245A760800146CA0 /* AppItemRowView.swift in Sources */,
+				81249CC624615F290046E345 /* EmptyWebview.swift in Sources */,
 				8176CEC524591D7B005A16C9 /* ContentView.swift in Sources */,
 				8148FDE9245A7A9200146CA0 /* Data.swift in Sources */,
 			);

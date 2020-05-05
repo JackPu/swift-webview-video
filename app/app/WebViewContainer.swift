@@ -9,15 +9,20 @@
 import SwiftUI
 
 struct WebViewContainer: View {
-    @State private var vibrateOnRing = false
+    @State private var propSelect = false
     var landmark: Landmark
     var body: some View {
         VStack {
             Text("WebView Test").font(.title)
-            WebView(request:  URLRequest(url: URL(string: "https://swift-webview-video.now.sh/")!))
+            if (self.propSelect) {
+                WebView(request:  URLRequest(url: URL(string: "https://swift-webview-video.now.sh/")!))
+            } else {
+                EmptyWebview(request:  URLRequest(url: URL(string: "https://swift-webview-video.now.sh/")!))
+            }
+            
             Spacer()
             VStack(alignment: .leading) {
-                Toggle(landmark.name, isOn: $vibrateOnRing)
+                Toggle(landmark.name, isOn: $propSelect)
                 Text(landmark.desc)
             }
             .padding()

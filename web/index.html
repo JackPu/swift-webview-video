@@ -84,8 +84,7 @@
         <p><a href="https://developer.apple.com/documentation/webkit/wkwebviewconfiguration">wkwebviewconfiguration</a></p>
     </div>
     <script>
-        // alert(navigator.userAgent)
-        window.onload = function() {
+        function _load () {
             var uaEl = document.querySelector(".js-ua");
             uaEl.innerHTML = navigator.userAgent;
             var sizeEl = document.querySelector(".js-size");
@@ -105,6 +104,7 @@
             debugInfo.style.display = 'none';
             btnDebug.style.display = '';
         }
+        document.addEventListener('DOMContentLoaded', _load);
     </script>
 </body>
 
