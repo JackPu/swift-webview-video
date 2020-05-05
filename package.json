@@ -4,7 +4,7 @@
   "description": "Test iOS webview attributes of video element",
   "main": "index.js",
   "scripts": {
-    "servr": "serve ./web",
+    "serve": "serve ./web -l 2020",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
