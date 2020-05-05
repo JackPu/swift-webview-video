@@ -13,11 +13,12 @@ struct ContentView: View {
         VStack {
             CircleImage()
                 .padding()
-            Text("WebView Video Control!")
+            Text("WebView Video Control")
             .font(.title)
-            .fontWeight(.bold)
             .foregroundColor(.red)
-                .padding(.top)
+            .padding(.top)
+            Text("@core-player").foregroundColor(.gray)
+                .padding()
         }
         
         .padding()

@@ -10,22 +10,25 @@ import SwiftUI
 
 struct WebViewContainer: View {
     @State private var vibrateOnRing = false
+    var landmark: Landmark
     var body: some View {
         VStack {
             Text("WebView Test").font(.title)
-            WebView(request:  URLRequest(url: URL(string: "https://me.jackpu.com")!))
+            WebView(request:  URLRequest(url: URL(string: "https://swift-webview-video.now.sh/")!))
             Spacer()
-            VStack() {
-                Toggle("Property", isOn: $vibrateOnRing)
+            VStack(alignment: .leading) {
+                Toggle(landmark.name, isOn: $vibrateOnRing)
+                Text(landmark.desc)
             }
             .padding()
             .frame(height: 200.0)
         }
+    .navigationBarTitle(Text(landmark.name), displayMode: .inline)
     }
 }
 
 struct WebViewContainer_Previews: PreviewProvider {
     static var previews: some View {
-        WebViewContainer()
+        WebViewContainer(landmark: landmarkData[0])
     }
 }

@@ -10,10 +10,16 @@ import SwiftUI
 
 struct AppListView: View {
     var body: some View {
-        List(landmarkData, id: \.id) {
-            landmark in
-            AppItemRowView(landmark: landmark)
+        NavigationView {
+            List(landmarkData, id: \.id) {
+                landmark in
+                NavigationLink(destination: WebViewContainer(landmark: landmark)){
+                    AppItemRowView(landmark: landmark)
+                }
+            }
+            .navigationBarTitle(Text("WKWebView Guide"))
         }
+        
     }
 }
 
